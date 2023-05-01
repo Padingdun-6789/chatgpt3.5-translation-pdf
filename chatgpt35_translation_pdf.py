@@ -38,7 +38,9 @@ for sentence in sentences:
 
 # Note: you need to be using OpenAI Python v0.27.0 for the code below to work
 import openai
-TOKEN = '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'
+# Note: you can input your own api key.你可加入你自己的apikey.
+# website链接：https://platform.openai.com/account/api-keys
+TOKEN = ''
 openai.api_key = TOKEN
 completion = openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
